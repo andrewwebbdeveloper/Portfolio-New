@@ -52,6 +52,10 @@ body {
     font-family: "Archivo";
 }
 
+.button:hover {
+    color: white;
+}
+
 .new-developer {
     font-size: 37px;
     padding: 50px 0px 20px 0px;
@@ -72,7 +76,10 @@ body {
 
 .contact {
     background-image: linear-gradient(45deg, #222222, #4e4e4e);
-    padding: 35px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0px;
 }
 
 .project {
@@ -111,6 +118,10 @@ body {
 
 }
 
+.project-buttons:hover {
+    color: white;
+}
+
 
 
 
@@ -124,10 +135,18 @@ body {
     margin-right: 30px;
 }
 
+.fa-laptop:hover {
+    color: white;
+}
+
 .fa-mobile-alt {
     color: #E69C0B;
     font-size: 20px;
     margin: 0px 6.5px;
+}
+
+.fa-mobile-alt:hover {
+    color: white;
 }
 
 .fa-file {
@@ -136,10 +155,18 @@ body {
     margin: 0px 6.5px;
 }
 
+.fa-file:hover {
+    color: white;
+}
+
 .fa-github {
     font-size: 55px;
     margin: 0px 10px;
     color: #E69C0B;
+}
+
+.fa-github:hover {
+    color: white;
 }
 
 .fa-phone {
@@ -148,10 +175,18 @@ body {
     color: #E69C0B;
 }
 
+.fa-phone:hover {
+    color: white;
+}
+
 .fa-envelope {
     font-size: 55px;
     margin: 0px 10px;
     color: #E69C0B;
+}
+
+.fa-envelope:hover {
+    color: white;
 }
 
 .fa-linkedin {
@@ -160,14 +195,26 @@ body {
     color: #E69C0B;
 }
 
+.fa-linkedin:hover {
+    color: white;
+}
+
 .fa-code {
     margin: 0px 5px 0px 0px;
     color: #E69C0B;
 }
 
+.fa-code:hover {
+    color: white;
+}
+
 .fa-desktop {
     margin: 0px 5px 0px 0px;
     color: #E69C0B;
+}
+
+.fa-desktop:hover {
+    color: white;
 }
 
 /* Font Awesome */
