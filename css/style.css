@@ -47,15 +47,14 @@ body {
     padding: 20px;
     border-radius: 50px;
     width: 150px;
-    margin: 50px 20px;
-    font-size: 25px;
+    margin: 25px 0px 75px 22px;
+    font-size: 20px;
     font-family: "Archivo";
-    margin-bottom: 40px;
 }
 
 .new-developer {
     font-size: 37px;
-    padding: 40px 0px 0px 0px;
+    padding: 50px 0px 20px 0px;
     text-align: center;
     color: #E69C0B;
     font-family: "Archivo";
@@ -65,11 +64,55 @@ body {
 .p-heading {
     color: #E69C0B;
     text-align: center;
-    margin: 20px 0px;
+    margin: 50px 0px 50px 0px;
     font-size: 40px;
     font-family: "Archivo";
 
 }
+
+.contact {
+    background-image: linear-gradient(45deg, #222222, #4e4e4e);
+    padding: 35px;
+}
+
+.project {
+    width: 100vw;
+    height: 300px;
+    border: 5px solid #E69C0B;
+    margin: 50px 0px;
+    border-radius: 10px;
+}
+
+.project-header {
+    font-size: 40px;
+    color: #E69C0B;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.project-button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.project-buttons {
+    color:#E69C0B;
+    background-color: #292929;
+    padding: 15px;
+    border-radius: 50px;
+    width: 150px;
+    margin: 50px 20px;
+    font-size: 15px;
+    font-family: "Archivo";
+    margin-bottom: 40px;
+    position: relative;
+    top: 130px;
+
+}
+
+
+
 
 /* Font Awesome */
 
@@ -83,7 +126,48 @@ body {
 
 .fa-mobile-alt {
     color: #E69C0B;
-    font-size: 30px;
-    margin: 0px 5px;
+    font-size: 20px;
+    margin: 0px 6.5px;
 }
+
+.fa-file {
+    color: #E69C0B;
+    font-size: 20px;
+    margin: 0px 6.5px;
+}
+
+.fa-github {
+    font-size: 55px;
+    margin: 0px 10px;
+    color: #E69C0B;
+}
+
+.fa-phone {
+    font-size: 55px;
+    margin: 0px 10px;
+    color: #E69C0B;
+}
+
+.fa-envelope {
+    font-size: 55px;
+    margin: 0px 10px;
+    color: #E69C0B;
+}
+
+.fa-linkedin {
+    font-size: 55px;
+    margin: 0px 10px;
+    color: #E69C0B;
+}
+
+.fa-code {
+    margin: 0px 5px 0px 0px;
+    color: #E69C0B;
+}
+
+.fa-desktop {
+    margin: 0px 5px 0px 0px;
+    color: #E69C0B;
+}
+
 /* Font Awesome */
