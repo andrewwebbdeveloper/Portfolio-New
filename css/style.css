@@ -26,7 +26,7 @@ body {
     color: #E69C0B;
     font-size: 35px;
     margin-bottom: 10px;
-    text-align: end;
+    text-align: start;
     overflow-wrap: break-word;
     width: 200px;
 }
