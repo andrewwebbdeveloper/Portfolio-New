@@ -1,151 +1,192 @@
 /* Google Font Imports */
-@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@100;300;500;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@100;300;500;800&display=swap");
 /* Google Font Imports */
 
 ::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Noticed a few default "a" element styles were still appearing */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Variables or "custom properties" is a newer part of CSS and a common convention is to declare them in the root like this */
+:root {
+  --primary-color: #e69c0b;
+}
+
+/* Another pattern you might see: You can use "utility  classes to apply common styles all over the place */
+.primary-text-color {
+  color: var(--primary-color);
 }
 
 .nav-options {
-    display: none;
+  display: none;
 }
 
 body {
-    background-image: linear-gradient(45deg, #393939, #3b3b3b);
+  background-image: linear-gradient(45deg, #393939, #3b3b3b);
 }
 
 .container {
-    display: flex;
-    flex-direction: row;
-    padding: 10px 0px;
-    background-color: #292929;
-    width: 100vw;
+  display: flex;
+  flex-direction: row;
+  padding: 10px 0px;
+  background-color: #292929;
+  width: 100vw;
 }
 
 .main-heading-wrap {
-    display: flex;
-    justify-content: center;
-    margin: auto;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
 
+.logo-icon {
+  color: var(--primary-color);
+  font-size: 75px;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 30px;
 }
 
 .heading {
-    margin: 10px 0px 10px 0px;
-    font-family: "Archivo";
-    font-weight: 800;
-    color: #E69C0B;
-    font-size: 35px;
-    margin-bottom: 10px;
-    text-align: start;
-    overflow-wrap: break-word;
-    width: 200px;
+  margin: 10px 0px 10px 0px;
+  font-family: "Archivo";
+  font-weight: 800;
+  color: #e69c0b;
+  font-size: 35px;
+  margin-bottom: 10px;
+  text-align: start;
+  overflow-wrap: break-word;
+  width: 200px;
 }
 
 .display-one {
-    background-image: linear-gradient(45deg, #222222, #4e4e4e); 
-    height: auto;
+  background-image: linear-gradient(45deg, #222222, #4e4e4e);
+  height: auto;
 }
 
 .buttons {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .button {
-    color:#E69C0B;
-    background-color: #292929;
-    padding: 20px;
-    border-radius: 50px;
-    width: 150px;
-    margin: 40px 0px 40px 22px;
-    font-size: 20px;
-    font-family: "Archivo";
-    border: none;
+  color: #e69c0b;
+  background-color: #292929;
+  padding: 20px;
+  border-radius: 50px;
+  width: 150px;
+  margin: 40px 0px 40px 22px;
+  font-size: 20px;
+  font-family: "Archivo";
+  border: none;
+
+  /* Here, I've applied flexbox instead of using the margins you'd applied before. This likely will mean you need some other adjustments to make these look good at various screen sizes ( responsiveness ). */
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 
 .button:hover {
-    color: white;
+  color: white;
 }
 
 .new-developer {
-    font-size: 37px;
-    padding: 50px 0px 20px 0px;
-    text-align: center;
-    color: #E69C0B;
-    font-family: "Archivo";
-    font-weight: 800;
+  font-size: 37px;
+  padding: 50px 0px 20px 0px;
+  text-align: center;
+  color: #e69c0b;
+  font-family: "Archivo";
+  font-weight: 800;
 }
 
 .p-heading {
-    color: #E69C0B;
-    text-align: center;
-    margin: 50px 0px 50px 0px;
-    font-size: 40px;
-    font-family: "Archivo";
-
+  color: #e69c0b;
+  text-align: center;
+  margin: 50px 0px 50px 0px;
+  font-size: 40px;
+  font-family: "Archivo";
 }
 
 .contact {
-    background-image: linear-gradient(45deg, #222222, #4e4e4e);
-    height: auto;
-    display: flex;
-    justify-content: center;
-    padding: 50px 0px;
+  background-image: linear-gradient(45deg, #222222, #4e4e4e);
+  height: auto;
+  display: flex;
+  justify-content: center;
+  padding: 50px 10rem;
+
+  font-size: 55px;
+  color: var(--primary-color);
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.contact a:hover {
+  color: white;
 }
 
 .project {
-    width: 100vw;
-    height: 300px;
-    border: 5px solid #E69C0B;
-    margin: 50px 0px;
-    border-radius: 10px;
+  width: 100vw;
+  height: 300px;
+  border: 5px solid #e69c0b;
+  margin: 50px 0px;
+  border-radius: 10px;
 }
 
 .project-header {
-    font-size: 40px;
-    color: #E69C0B;
-    text-align: center;
-    margin-top: 10px;
-    font-family: "Archivo";
+  font-size: 40px;
+  color: #e69c0b;
+  text-align: center;
+  margin-top: 10px;
+  font-family: "Archivo";
 }
 
 .project-button-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .project-buttons {
-    color:#E69C0B;
-    background-color: #292929;
-    padding: 15px;
-    border-radius: 50px;
-    width: 150px;
-    margin: 50px 20px;
-    font-size: 15px;
-    font-family: "Archivo";
-    margin-bottom: 40px;
-    position: relative;
-    top: 130px;
-    border: none;
+  color: #e69c0b;
+  background-color: #292929;
+  padding: 15px;
+  border-radius: 50px;
+  width: 150px;
+  margin: 50px 20px;
+  font-size: 15px;
+  font-family: "Archivo";
+  margin-bottom: 40px;
+  position: relative;
+  top: 130px;
+  border: none;
 
+  /* Center content and put a gap between */
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 
 .project-buttons:hover {
-    color: white;
+  color: white;
 }
-
-
-
 
 /* Font Awesome */
 
+/* Replaced with.logo-icon */
+/******************************/
+
+/*
 .fa-laptop {
     color:#E69C0B;
     font-size: 75px;
@@ -153,7 +194,11 @@ body {
     margin-left: 20px;
     margin-right: 30px;
 }
+*/
 
+/* Moved font-size and color styles up to their containers and ( mostly ) switched to flexbox for spacing  */
+/******************************/
+/*
 .fa-laptop:hover {
     color: white;
 }
@@ -234,67 +279,64 @@ body {
 
 .fa-desktop:hover {
     color: white;
-}
-
+} 
+*/
 /* Font Awesome */
-
-
 
 /* Media Queries Section */
 @media (min-width: 1201px) {
-
-ul {
+  ul {
     list-style: none;
-}
+  }
 
-.nav-options {
-   display: flex;
-   justify-content: flex-end;
-   color: #E69C0B;
-   font-size: 50px;
-   font-family: "Archivo";
-}
+  .nav-options {
+    display: flex;
+    justify-content: flex-end;
+    color: #e69c0b;
+    font-size: 50px;
+    font-family: "Archivo";
+  }
 
-.nav-item {
+  .nav-item {
     font-size: 50px;
     margin: 50px 15px;
-}
+  }
 
-.container {
+  .container {
     width: 100vw;
     justify-content: space-between;
-}
+  }
 
-.main-heading-wrap {
+  .main-heading-wrap {
     display: flex;
     margin: 0px 0px;
-}
+  }
 
-.heading {
+  .heading {
     font-size: 39px;
-}
+  }
 
-.new-developer {
+  .new-developer {
     font-size: 125px;
-}
+  }
 
-.project {
+  .project {
     width: 50%;
     height: 500px;
-    border: 5px solid #E69C0B;
+    border: 5px solid #e69c0b;
     margin: 50px 0px;
     border-radius: 10px;
-}
+  }
 
-.p-heading {
+  .p-heading {
     font-size: 100px;
-}
+  }
 
-.display-one {
+  .display-one {
     padding: 100px 0px;
-}
+  }
 
-.button {
+  .button {
     padding: 30px;
     border-radius: 50px;
     width: 350px;
@@ -302,22 +344,22 @@ ul {
     font-size: 35px;
     font-family: "Archivo";
     border: none;
-}
+  }
 
-.project {
+  .project {
     width: 50%;
     margin: 100px auto;
     height: 700px;
-    border: 10px solid #E69C0B;
-}
+    border: 10px solid #e69c0b;
+  }
 
-.project-header {
+  .project-header {
     font-size: 50px;
     font-weight: 800;
     margin: 30px 0px;
-}
+  }
 
-.project-buttons {
+  .project-buttons {
     padding: 30px;
     border-radius: 50px;
     width: 350px;
@@ -328,121 +370,103 @@ ul {
     position: relative;
     top: 400px;
     border: none;
+  }
 
-}
-
-.fa-laptop {
-    color:#E69C0B;
+  .fa-laptop {
+    color: #e69c0b;
     font-size: 75px;
     margin-top: 10px;
     margin-left: 20px;
     margin-right: 30px;
-}
+  }
 
-.fa-laptop:hover {
+  .fa-laptop:hover {
     color: white;
-}
+  }
 
-.fa-mobile-alt {
-    color: #E69C0B;
+  .fa-mobile-alt {
+    color: #e69c0b;
     font-size: 20px;
     margin: 0px 6.5px;
-}
+  }
 
-.fa-mobile-alt:hover {
+  .fa-mobile-alt:hover {
     color: white;
-}
+  }
 
-.fa-file {
-    color: #E69C0B;
+  .fa-file {
+    color: #e69c0b;
     font-size: 20px;
     margin: 0px 6.5px;
-}
+  }
 
-.fa-file:hover {
+  .fa-file:hover {
     color: white;
-}
+  }
 
-.fa-github {
+  .fa-github {
     font-size: 200px;
     margin: 70px 75px;
     padding: 20px 0px;
-}
+  }
 
-.fa-phone {
+  .fa-phone {
     font-size: 200px;
     margin: 70px 75px;
     padding: 20px 0px;
-}
+  }
 
-.fa-envelope {
+  .fa-envelope {
     font-size: 200px;
     margin: 70px 75px;
     padding: 20px 0px;
-}
+  }
 
-.fa-linkedin {
+  .fa-linkedin {
     font-size: 200px;
     margin: 70px 75px;
     padding: 20px 0px;
-}
+  }
 
-.fa-mobile-alt {
+  .fa-mobile-alt {
     font-size: 35px;
     margin: 0px 15px;
-}
+  }
 
-.fa-file {
-    color: #E69C0B;
+  .fa-file {
+    color: #e69c0b;
     font-size: 35px;
     margin: 0px 15px;
-}
+  }
 
-.nav-item:hover {
+  .nav-item:hover {
     color: white;
-}
+  }
 
-.container {
+  .container {
     padding: 50px 0px;
-}
+  }
 
-.fa-laptop {
-    color:#E69C0B;
+  .fa-laptop {
+    color: #e69c0b;
     font-size: 100px;
     margin: 30px;
-}
+  }
 
-.heading {
+  .heading {
     font-size: 39px;
-    margin: 40px 0px;   
-}
+    margin: 40px 0px;
+  }
 
-.fa-code {
+  .fa-code {
     margin: 0px 15px 0px 0px;
-    color: #E69C0B;
-}
+    color: #e69c0b;
+  }
 
-.fa-desktop {
+  .fa-desktop {
     margin: 0px 15px 0px 0px;
-    color: #E69C0B;
+    color: #e69c0b;
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-}
-
-
-
-
-
 
 /* Media Queries Section */
