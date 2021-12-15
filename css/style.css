@@ -260,6 +260,7 @@ ul {
 
 .main-heading-wrap {
     display: flex;
+    width: 50%;
 }
 
 .heading {
